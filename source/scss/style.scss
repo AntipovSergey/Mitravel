@@ -1,0 +1,16 @@
+//ГЛОБАЛЬНЫЕ ЭЛЕМЕНТЫ
+@import "./vendor/normalize";
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// КОМПОНЕНТЫ
+@import "./components/first";
+@import "./components/header";
+@import "./components/socials";
+@import "./components/burger";
+@import "./components/logo";
+@import "./components/button";
+@import "./components/search-form";
+@import "./components/main-slider";

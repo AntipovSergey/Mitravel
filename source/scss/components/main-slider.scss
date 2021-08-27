@@ -1,0 +1,19 @@
+.main-slider {
+  overflow: hidden;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  line-height: 1px;
+
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    font-size: 12px;
+    line-height: 1px;
+    letter-spacing: 2.18182px;
+    text-transform: uppercase;
+    background-color: $color-neptune;
+    font-weight: 800;
+  }
+}

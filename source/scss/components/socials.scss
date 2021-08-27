@@ -1,0 +1,27 @@
+.socials {
+  display: flex;
+  align-items: center;
+
+  &__item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  &__link {
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__link--fb {
+    width: 11px;
+    height: 20px;
+    background-image: url("../../img/icons/fb.svg");
+  }
+
+  &__link--tw {
+    width: 20px;
+    height: 17px;
+    background-image: url("../../img/icons/tw.svg");
+  }
+}
