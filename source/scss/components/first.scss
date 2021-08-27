@@ -1,6 +1,7 @@
 .first {
   height: 100vh;
   min-height: 600px;
+  max-height: 1080px;
   background-image: url("../../img/first-bg.jpg");
   background-position: center;
   background-size: cover;
@@ -52,6 +53,10 @@
     width: calc(100% - 60px);
     display: flex;
     align-items: flex-end;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/first-bg@2x.jpg");
   }
 }
 

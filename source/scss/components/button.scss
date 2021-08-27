@@ -8,4 +8,12 @@
   text-transform: uppercase;
   background-color: $color-burnt-sienna;
   border-radius: 8px;
+
+  &--blue {
+    background-color: $color-neptune;
+  }
+
+  &--article {
+    padding: 33px 78px 33px 79px;
+  }
 }

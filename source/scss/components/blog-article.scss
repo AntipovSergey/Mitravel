@@ -1,0 +1,40 @@
+.blog-article {
+  padding-bottom: 107px;
+
+  &__category {
+    display: inline-block;
+    margin: 0;
+    padding: 18px 29px 17px 30px;
+    font-family: inherit;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 100px;
+    background-color: $color-burnt-sienna;
+  }
+
+  &__title {
+    margin: 0;
+    padding-bottom: 17px;
+    padding-top: 15px;
+    width: 38%;
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  &__descr {
+    margin: 0;
+    padding-bottom: 42px;
+    max-width: 42%;
+    font-family: "SF Compact", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &__link {
+    display: inline-block;
+    padding-top: 30px;
+  }
+}

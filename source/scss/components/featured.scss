@@ -1,0 +1,23 @@
+.featured {
+  position: relative;
+  background-image: url("../../img/featured-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 1080px;
+
+  &__stories {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 35.3%;
+    background-color: rgba($color: $color-limed-spruce, $alpha: 0.94);
+  }
+
+  &__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
