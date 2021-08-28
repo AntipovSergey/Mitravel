@@ -1,0 +1,41 @@
+.featured-videos {
+  padding-top: 150px;
+  padding-bottom: 100px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 25px;
+  }
+
+  &__descr {
+    margin: 0 auto;
+    margin-bottom: 56px;
+    max-width: 644px;
+    font-family: "SF Compact", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: $color-slate-gray;
+  }
+
+  &__subtitle {
+    position: relative;
+    z-index: 100;
+    margin: 0;
+    padding-bottom: 34px;
+    padding-left: 33px;
+    font-family: "SF Pro", "Arial", sans-serif;
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 700;
+    transform: translateY(300px);
+    transition: transform 0.3s ease-in-out;
+  }
+}

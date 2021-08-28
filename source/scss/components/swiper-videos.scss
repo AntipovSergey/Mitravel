@@ -1,0 +1,88 @@
+.featured-videos .slider-container {
+  padding: 100px 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.featured-videos .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  background-color: $color-mercury-shade;
+  border-radius: 8px;
+  min-height: 551px;
+  width: 890px;
+  transition: transform 0.3s;
+  background-position: center;
+  background-size: cover;
+}
+
+.featured-videos .swiper-slide-active::before {
+  content: "";
+  position: absolute;
+  top: 32px;
+  left: 42px;
+  background-image: url("../../img/icons/featured-videos-play.svg");
+  width: 94px;
+  height: 94px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.featured-videos .swiper-slide::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 50%, rgba(0, 0, 0, 0.461617) 100%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.featured-videos .swiper-slide-active {
+  border-radius: 8px;
+  overflow: hidden;
+  transform: scaleX(1.161) scaleY(1.23);
+  transition: transform 0.3s;
+}
+
+.featured-videos .swiper-slide-active .featured-videos__subtitle {
+  transform: translateY(0);
+  transition: transform 0.3s;
+}
+
+.featured-videos .swiper-slide-active::after {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+
+.slide-1 {
+  background-image: url("../../img/featured-video-greece.jpg");
+}
+
+.slide-2 {
+  background-image: url("../../img/featured-video-desert.jpg");
+}
+
+.slide-3 {
+  background-image: url("../../img/featured-video-sea.jpg");
+}
+
+@media (min-resolution: 2dppx) {
+  .slide-1 {
+    background-image: url("../../img/featured-video-greece@2x.jpg");
+  }
+
+  .slide-2 {
+    background-image: url("../../img/featured-video-desert@2x.jpg");
+  }
+
+  .slide-3 {
+    background-image: url("../../img/featured-video-sea@2x.jpg");
+  }
+}
