@@ -59,10 +59,12 @@
   }
 
   &__item:hover::before {
+    transition: opacity 0.3s ease-in-out;
     opacity: 0.9;
   }
 
   &__item:hover .become__text {
+    transition: transform 0.3s ease-in-out;
     transform: translateY(0);
   }
 

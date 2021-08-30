@@ -1,0 +1,73 @@
+.newsletter {
+  &__content {
+    position: relative;
+    background-color: $color-neptune;
+    background-image: url("../../img/news-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 133px;
+    padding-top: 333px;
+    padding-bottom: 162px;
+
+    @media (resolution: 2dppx) {
+      background-image: url("../../img/news-bg@2x.jpg");
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    max-width: 368px;
+  }
+
+  &__descr {
+    font-family: "SF Compact", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21px;
+    color: $color-white;
+    max-width: 368px;
+  }
+
+  &__form {
+    position: absolute;
+    right: 133px;
+    bottom: -96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 65px;
+    width: 501px;
+    height: 416px;
+    background-color: $color-white;
+  }
+
+
+  &__label {
+    margin-bottom: 21px;
+    width: calc(100% - (72px * 2));
+  }
+
+  &__input {
+    padding-bottom: 24px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $color-silver-sand;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $color-gable-green;
+  }
+
+  &__button {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: 100%;
+    margin-top: 45px;
+    padding: 41px 199px 41px 201px;
+  }
+}

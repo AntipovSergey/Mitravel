@@ -13,7 +13,7 @@
     border-bottom: 1px solid $color-river-bed;
   }
 
-  &__article:last-child {
+  &__item:last-of-type .stories__article {
     border: none;
   }
 
